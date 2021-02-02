@@ -23,8 +23,8 @@ boolean current = digitalRead(8);
 
 void setup()
 {
-	pinMode(8, INPUT);
-  	pinMode(11, OUTPUT);
+  pinMode(8, INPUT);
+    pinMode(11, OUTPUT);
   
 }
 
@@ -36,7 +36,7 @@ void loop()
    ledLevel = ledLevel + 51;
       
   }
-	lastButton = currentButton;
+  lastButton = currentButton;
   if (ledLevel > 255) ledLevel=0;
   
   analogWrite(11, ledLevel);
